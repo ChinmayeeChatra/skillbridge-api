@@ -1,2 +1,9 @@
-GET http://127.0.0.1:5000/monitoring/attendance
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo1LCJyb2xlIjoibW9uaXRvcmluZ19vZmZpY2VyIiwiaWF0IjoxNzc3NzA3Njg4LCJleHAiOjE3Nzc3MTEyODgsInR5cGUiOiJtb25pdG9yaW5nIn0.8nu3gv1VX9JFN7cJzLxqSF6KsND0L8HBmdMKYPqAWPg
+POST https://skillbridge-api-g4zq.onrender.com/auth/signup
+Content-Type: application/json
+
+{
+  "name": "John",
+  "email": "john@test.com",
+  "password": "password123",
+  "role": "student"
+}

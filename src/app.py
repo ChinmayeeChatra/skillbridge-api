@@ -33,6 +33,10 @@ def create_app():
     from src.routes.monitoring_routes import monitoring_bp
     app.register_blueprint(monitoring_bp)
 
+    with app.app_context():
+    from src.extensions import db
+    db.create_all()
+
     @app.errorhandler(404)
     def not_found(e):
         return jsonify({"error": "Resource not found"}), 404
