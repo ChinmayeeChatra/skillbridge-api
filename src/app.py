@@ -34,8 +34,13 @@ def create_app():
     app.register_blueprint(monitoring_bp)
 
     with app.app_context():
-    from src.extensions import db
-    db.create_all()
+        db.create_all()
+
+        try:
+            from src.seed import seed_data
+            seed_data()
+        except Exception as e:
+            print("Seed skipped:", e)
 
     @app.errorhandler(404)
     def not_found(e):
