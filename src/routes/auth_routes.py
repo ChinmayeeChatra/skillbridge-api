@@ -9,7 +9,7 @@ from src.auth import (
     create_access_token,
     create_monitoring_token
 )
-from utils import validate_required
+from src.utils import validate_required
 
 auth_bp = Blueprint("auth", __name__)
 
