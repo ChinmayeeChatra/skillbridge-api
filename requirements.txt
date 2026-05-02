@@ -1,0 +1,9 @@
+Flask
+Flask-SQLAlchemy
+Flask-Migrate
+PyMySQL
+PyJWT
+Werkzeug
+python-dotenv
+pytest
+gunicorn
