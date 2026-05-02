@@ -15,22 +15,22 @@ def create_app():
 
     db.init_app(app)
 
-    from routes.auth_routes import auth_bp
+    from src.routes.auth_routes import auth_bp
     app.register_blueprint(auth_bp)
 
-    from routes.batch_routes import batch_bp
+    from src.routes.batch_routes import batch_bp
     app.register_blueprint(batch_bp)
 
-    from routes.session_routes import session_bp
+    from src.routes.session_routes import session_bp
     app.register_blueprint(session_bp)
 
-    from routes.attendance_routes import attendance_bp
+    from src.routes.attendance_routes import attendance_bp
     app.register_blueprint(attendance_bp)
 
-    from routes.summary_routes import summary_bp
+    from src.routes.summary_routes import summary_bp
     app.register_blueprint(summary_bp)
 
-    from routes.monitoring_routes import monitoring_bp
+    from src.routes.monitoring_routes import monitoring_bp
     app.register_blueprint(monitoring_bp)
 
     @app.errorhandler(404)

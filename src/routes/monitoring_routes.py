@@ -1,6 +1,6 @@
 from flask import Blueprint, jsonify, request, current_app, g
 import jwt
-from models import Attendance, Session, User
+from src.models import Attendance, Session, User
 
 monitoring_bp = Blueprint("monitoring", __name__)
 

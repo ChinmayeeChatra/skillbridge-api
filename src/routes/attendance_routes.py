@@ -1,7 +1,7 @@
 from flask import Blueprint, request, jsonify, g
-from extensions import db
-from models import Session, Attendance, User
-from decorators import role_required
+from src.extensions import db
+from src.models import Session, Attendance, User
+from src.decorators import role_required
 
 attendance_bp = Blueprint("attendance", __name__)
 

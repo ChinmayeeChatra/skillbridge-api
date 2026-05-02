@@ -1,6 +1,6 @@
 from flask import Blueprint, jsonify
-from models import Batch, Session, Attendance
-from decorators import role_required
+from src.models import Batch, Session, Attendance
+from src.decorators import role_required
 
 summary_bp = Blueprint("summary", __name__)
 

@@ -1,8 +1,8 @@
 from flask import Blueprint, request, jsonify, g
 from datetime import datetime
-from extensions import db
-from models import Session, Batch, Attendance, User
-from decorators import role_required
+from src.extensions import db
+from src.models import Session, Batch, Attendance, User
+from src.decorators import role_required
 
 session_bp = Blueprint("session", __name__)
 

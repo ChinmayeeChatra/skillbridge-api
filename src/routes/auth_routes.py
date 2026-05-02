@@ -1,9 +1,9 @@
 from flask import Blueprint, request, jsonify, current_app
 import jwt
 
-from models import User
-from extensions import db
-from auth import (
+from src.models import User
+from src.extensions import db
+from src.auth import (
     hash_password,
     verify_password,
     create_access_token,
