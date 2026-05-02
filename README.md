@@ -5,8 +5,8 @@
 (Add after deployment)
 
 ```
-Base URL: https://your-api-url.com
-```
+Base URL: https://skillbridge-api-g4zq.onrender.com
+
 
 ---
 
@@ -172,12 +172,7 @@ pytest
 
 ##  Deployment
 
-(Add your deployed URL here)
+(https://skillbridge-api-g4zq.onrender.com)
 
 ---
 
-##  With more time
-
-* Add refresh tokens
-* Add admin dashboard
-* Improve logging and monitoring
